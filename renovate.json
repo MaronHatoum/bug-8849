@@ -37,12 +37,5 @@
       "matchPackageNames": ["squizlabs/php_codesniffer"],
       "allowedVersions": "<3.4"
     }
-  ],
-  "hostRules": [
-    {
-      "baseUrl": "https://repo.magento.com",
-      "username": "<keyhere>",
-      "password": "<keyhere>"
-    }
   ]
 }
