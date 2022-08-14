@@ -1,0 +1,48 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "groupName": "all",
+  "major": {
+    "enabled": false
+  },
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**",
+    "app/code/**"
+  ],
+  "separateMajorMinor": true,
+  "separateMinorPatch": false,
+  "enabledManagers": ["composer"],
+  "fetchReleaseNotes": false,
+  "trustLevel": "high",
+  "packageRules": [
+    {
+      "matchPackageNames": ["magento/product-community-edition", "magento/product-enterprise-edition"],
+      "registryUrls": ["https://repo.magento.com"],
+      "allowedVersions": "<2.4"
+    },
+    {
+      "matchPackageNames": ["allure-framework/allure-phpunit"],
+      "allowedVersions": "<1.2.4"
+    },
+    {
+      "matchPackageNames": ["squizlabs/php_codesniffer"],
+      "allowedVersions": "<3.4"
+    }
+  ],
+  "hostRules": [
+    {
+      "baseUrl": "https://repo.magento.com",
+      "username": "<keyhere>",
+      "password": "<keyhere>"
+    }
+  ]
+}
