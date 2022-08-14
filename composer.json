@@ -1,0 +1,13 @@
+{
+    "name": "renovate/renovate-composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Maron",
+            "email": "maron@gmail.com"
+        }
+    ],
+    "require": {
+        "magento/product-community-edition": "^2.3.6"
+    }
+}
